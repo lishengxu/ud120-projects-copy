@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0b0ba2e-a626-4936-81e7-a6a7910af4b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ud120-projects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ud120-projects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svm/svm_author_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/svm/svm_author_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decision_tree/dt_author_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/decision_tree/dt_author_id.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,10 +13,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ud120_projects_copy$svm_author_id.coverage" NAME="svm_author_id Coverage Results" MODIFIED="1536896312456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/svm" />
+    <SUITE FILE_PATH="coverage/ud120_projects_copy$svm_author_id.coverage" NAME="svm_author_id Coverage Results" MODIFIED="1538015645586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/svm" />
     <SUITE FILE_PATH="coverage/ud120_projects_copy$nb_author_id.coverage" NAME="nb_author_id Coverage Results" MODIFIED="1536892933273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/naive_bayes" />
     <SUITE FILE_PATH="coverage/ud120_projects$nb_author_id.coverage" NAME="nb_author_id Coverage Results" MODIFIED="1536034838641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/naive_bayes" />
     <SUITE FILE_PATH="coverage/ud120_projects$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1536032643550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ud120_projects_copy$dt_author_id.coverage" NAME="dt_author_id Coverage Results" MODIFIED="1538018311517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/decision_tree" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-461059563">
@@ -46,31 +46,33 @@
     <session id="673769830">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.25" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="py" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="Python" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="423" />
+          <entry key="Python" value="629" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="423" />
+          <entry key="py" value="629" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -81,26 +83,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/naive_bayes/nb_author_id.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="25" selection-start-line="25" selection-end-line="34" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/svm/svm_author_id.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+            <state relative-caret-position="726">
+              <caret line="34" column="42" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/decision_tree/dt_author_id.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/svm/svm_author_id.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="31" selection-start-line="31" selection-end-line="34" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tools/email_preprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="64" column="64" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="64" />
+            <state relative-caret-position="295">
+              <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
               <folding>
                 <element signature="e#19#32#0" expanded="true" />
               </folding>
@@ -117,6 +128,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/svm/svm_author_id.py" />
+        <option value="$PROJECT_DIR$/decision_tree/dt_author_id.py" />
+        <option value="$PROJECT_DIR$/tools/email_preprocess.py" />
       </list>
     </option>
   </component>
@@ -126,7 +139,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-126" />
     <option name="width" value="1863" />
     <option name="height" value="1080" />
@@ -136,13 +149,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ud120-projects-copy" type="b2602c69:ProjectViewProjectNode" />
               <item name="ud120-projects-copy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ud120-projects-copy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ud120-projects-copy" type="462c0819:PsiDirectoryNode" />
+              <item name="decision_tree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ud120-projects-copy" type="b2602c69:ProjectViewProjectNode" />
@@ -154,10 +171,16 @@
               <item name="ud120-projects-copy" type="462c0819:PsiDirectoryNode" />
               <item name="svm" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ud120-projects-copy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ud120-projects-copy" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -179,7 +202,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.svm_author_id">
+  <component name="RunManager" selected="Python.dt_author_id">
+    <configuration name="dt_author_id" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ud120-projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/decision_tree" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/decision_tree/dt_author_id.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="nb_author_id" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ud120-projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -227,9 +272,11 @@
     <list>
       <item itemvalue="Python.nb_author_id" />
       <item itemvalue="Python.svm_author_id" />
+      <item itemvalue="Python.dt_author_id" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dt_author_id" />
         <item itemvalue="Python.svm_author_id" />
         <item itemvalue="Python.nb_author_id" />
       </list>
@@ -252,7 +299,7 @@
     <frame x="50" y="0" width="1871" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1652983" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17022441" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -285,27 +332,34 @@
     <entry file="file://$PROJECT_DIR$/venv/local/lib/python2.7/site-packages/sklearn/base.py" />
     <entry file="file://$PROJECT_DIR$/venv/local/lib/python2.7/site-packages/sklearn/cross_validation.py" />
     <entry file="file://$PROJECT_DIR$/venv/local/lib/python2.7/site-packages/scipy/stats/stats.py" />
+    <entry file="file://$PROJECT_DIR$/svm/svm_author_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="31" selection-start-line="31" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/naive_bayes/nb_author_id.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="25" selection-start-line="25" selection-end-line="34" selection-end-column="62" />
+        <state relative-caret-position="726">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decision_tree/dt_author_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/email_preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="64" column="64" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="64" />
+        <state relative-caret-position="295">
+          <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
           <folding>
             <element signature="e#19#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svm/svm_author_id.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
         </state>
       </provider>
     </entry>
