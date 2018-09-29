@@ -56,6 +56,19 @@ print "AdaBoost score is ", clf.score(features_test, labels_test)
 from sklearn.metrics import accuracy_score
 print "AdaBoost score is ", accuracy_score(pred, labels_test)
 
+# RandomForest
+from sklearn.ensemble import RandomForestClassifier
+
+clf = RandomForestClassifier()
+clf.fit(features_train, labels_train)
+
+pred = clf.predict(features_test)
+
+print "Random score is ", clf.score(features_test, labels_test)
+
+from sklearn.metrics import accuracy_score
+print "Random score is ", accuracy_score(pred, labels_test)
+
 try:
     prettyPicture(clf, features_test, labels_test)
 except NameError:
