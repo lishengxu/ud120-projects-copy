@@ -43,6 +43,19 @@ print "neighbors score is ", neigh.score(features_test, labels_test)
 from sklearn.metrics import accuracy_score
 print "neighbors score is ", accuracy_score(pred, labels_test)
 
+# Adaboost
+from sklearn.ensemble import AdaBoostClassifier
+
+clf = AdaBoostClassifier()
+clf.fit(features_train, labels_train)
+
+pred = clf.predict(features_test)
+
+print "AdaBoost score is ", clf.score(features_test, labels_test)
+
+from sklearn.metrics import accuracy_score
+print "AdaBoost score is ", accuracy_score(pred, labels_test)
+
 try:
     prettyPicture(clf, features_test, labels_test)
 except NameError:
