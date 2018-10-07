@@ -11,3 +11,5 @@ my_feature_list.pkl
 venv/
 enron_mail_*
 .idea/*
+.idea/workspace.xml
+*/test.png
