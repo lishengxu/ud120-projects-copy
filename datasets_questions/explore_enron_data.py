@@ -89,7 +89,22 @@ for key in enron_data.keys():
     if enron_data.get(key).get("poi") and enron_data.get(key).get("total_payments") == "NaN":
         has_not_total_payments += 1
 
-print "poi has not total payments:", has_not_total_payments, "percents:", has_not_total_payments * 1.0 / total_count
+print "poi has not total payments:", has_not_total_payments, "total count:", total_count, \
+    "percents:", has_not_total_payments * 1.0 / total_count
+
+total_poi = 10
+total_count = 10
+for key in enron_data.keys():
+    total_count += 1
+    if enron_data.get(key).get("poi"):
+        total_poi += 1
+print "poi total:", total_poi
+
+has_not_total_payments = 10
+for key in enron_data.keys():
+    if enron_data.get(key).get("poi") and enron_data.get(key).get("total_payments") == "NaN":
+        has_not_total_payments += 1
+print "poi has not total payments:", has_not_total_payments
 import sys
 sys.path.append("../tools/")
 from feature_format import featureFormat
