@@ -10,28 +10,28 @@ from feature_format import featureFormat, targetFeatureSplit
 ### read in data dictionary, convert to numpy array
 data_dict = pickle.load( open("../final_project/final_project_dataset.pkl", "r") )
 data_dict.pop("TOTAL", 0)
-data_dict.pop("SKILLING JEFFREY K", 0)
 features = ["salary", "bonus"]
 data = featureFormat(data_dict, features)
 
-
+max_salary = 0
 ### your code below
-maxSalary = 0
-maxBonus = 0
 for point in data:
     salary = point[0]
     bonus = point[1]
-    if maxSalary < salary:
-        maxSalary = salary
-    if maxBonus < bonus:
-        maxBonus = bonus
-    print salary, bonus
+    if max_salary < salary:
+        max_salary = salary
+
+    if salary > 1000000 and bonus > 5000000:
+        print "salary:", salary, ",bonus:", bonus
     matplotlib.pyplot.scatter(salary, bonus)
 
-print "maxSalary:", maxSalary, "maxBonus:", maxBonus
-for each in data_dict.keys():
-    if data_dict.get(each).get("salary") == maxSalary:
-        print "key:", each
+for key in data_dict.keys():
+    if data_dict.get(key).get("salary") == max_salary:
+        print "maxSalary:", key
+    if data_dict.get(key).get("salary") == 1072321.0:
+        print "salary:1072321.0 is ", key
+    if data_dict.get(key).get("salary") == 1111258.0:
+        print "salary:1111258.0 is ", key
 
 matplotlib.pyplot.xlabel("salary")
 matplotlib.pyplot.ylabel("bonus")
