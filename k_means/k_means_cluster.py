@@ -48,6 +48,7 @@ data_dict.pop("TOTAL", 0)
 ### can be any key in the person-level dictionary (salary, director_fees, etc.) 
 feature_1 = "salary"
 feature_2 = "exercised_stock_options"
+
 poi  = "poi"
 features_list = [poi, feature_1, feature_2]
 data = featureFormat(data_dict, features_list )
@@ -62,11 +63,68 @@ for f1, f2 in finance_features:
     plt.scatter( f1, f2 )
 plt.show()
 
+min_stock = sys.float_info.max
+max_stock = 0
+
+for key in data_dict.keys():
+    option = data_dict.get(key).get("exercised_stock_options")
+    if option != "NaN" and min_stock > option:
+        min_stock = option
+    if option != "NaN" and max_stock < option:
+        max_stock = option
+print "min_stock:", min_stock, ",max_stock:", max_stock
+
+from sklearn.preprocessing import MinMaxScaler
+stocks = numpy.array([[min_stock], [1000000.], [max_stock]])
+scaler = MinMaxScaler()
+scaler_stocks = scaler.fit_transform(stocks)
+print scaler_stocks
+
+min_salary = sys.float_info.max
+max_salary = 0
+for key in data_dict.keys():
+    option = data_dict.get(key).get("salary")
+    if option != "NaN" and min_salary > option:
+        min_salary = option
+    if option != "NaN" and max_salary < option:
+        max_salary = option
+print "min_salary:", min_salary, ",max_salary:", max_salary
+
+salary = ([[min_salary], [200000.], [max_salary]])
+scaler = MinMaxScaler()
+scaler_salary = scaler.fit_transform(salary)
+print scaler_salary
 ### cluster here; create predictions of the cluster labels
 ### for the data and store them to a list called pred
+from sklearn.cluster import KMeans
 
+kmeans = KMeans(n_clusters = 2).fit(finance_features)
+pred = kmeans.predict(finance_features)
+#print "predict:", kmeans.predict([[0, 0], [4, 4]])
 
+### rename the "name" parameter when you change the number of features
+### so that the figure gets saved to a different file
+try:
+    Draw(pred, finance_features, poi, mark_poi=False, name="clusters.pdf", f1_name=feature_1, f2_name=feature_2)
+except NameError:
+    print "no predictions object named pred found, no clusters to plot"
 
+feature_1 = "salary"
+feature_2 = "exercised_stock_options"
+feature_3 = "total_payments"
+
+poi  = "poi"
+features_list = [poi, feature_1, feature_2, feature_3]
+data = featureFormat(data_dict, features_list )
+poi, finance_features = targetFeatureSplit( data )
+
+### cluster here; create predictions of the cluster labels
+### for the data and store them to a list called pred
+from sklearn.cluster import KMeans
+
+kmeans = KMeans(n_clusters = 2).fit(finance_features)
+pred = kmeans.predict(finance_features)
+#print "predict:", kmeans.predict([[0, 0], [4, 4]])
 
 ### rename the "name" parameter when you change the number of features
 ### so that the figure gets saved to a different file
